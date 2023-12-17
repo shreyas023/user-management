@@ -8,10 +8,10 @@ This repository contains a user management system developed using Node.js, Expre
 **2. Clone repository**:<br>
 ```git clone <repository_URL>```<br>
 ```cd <repository_directory>```<br><br>
-**3. Install Dependencie**s:<br>
+**3. Install Dependencies**:<br>
 ```
 npm install
-npm install express, express-handlebars, body-parsers
+npm install express, express-handlebars, body-parsers, mysql, routes
 npm install --save-dev dotenv
 ```
 Dependencies include Express, Express Handlebars, Body-parser, dotenv, and other necessary packages.<br><br>
@@ -27,6 +27,23 @@ PORT=5000
 **MySQL Setup (Choose one)** :<br>
 - Install MySQL locally or use XAMPP to set up a local server.<br>
 - Ensure MySQL is running on the same device as the application for the 1-tier architecture.<br><br>
+
+**Create Database Schema**:<br>
+
+1. If you haven't created the database yet, create it using<br>
+```CREATE DATABASE usermanagementsystem;```<br>
+2. Switch to the database:<br>
+```USE usermanagementsystem;```<br>
+3. Copy and Paste SQL Query.
+<br>
+4. Locate the 'user-schema.sql' file in your repository.
+<br>
+5. Open the file and copy the SQL query.
+<br>
+6. Run the SQL Query.
+<br><br>
+Paste the copied query into your MySQL command prompt or tool and execute it.<br>
+This will create the user table with the specified schema in your usermanagementsystem database.<br><br>
 
 **Starting the Application** :<br>
 Run the following command to start the server:<br>
